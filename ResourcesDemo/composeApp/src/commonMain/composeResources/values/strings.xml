@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Compose resources demo</string>
+    <string name="greeting">Hello, how are you?</string>
+</resources>

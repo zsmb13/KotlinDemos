@@ -1,0 +1,6 @@
+<resources>
+    <string name="android">Android!</string>
+    <string name="android2">Android!</string>
+    <string name="android3">Android!</string>
+    <string name="greeting">Hello, how are you?</string>
+</resources>
