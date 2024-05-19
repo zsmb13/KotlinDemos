@@ -26,8 +26,8 @@ fun App() {
             val state: Lifecycle.State by lifecycle.currentStateFlow.collectAsState()
 
             Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
-                Text("This app is currently", fontSize = 40.sp)
-                Text("$state", fontSize = 40.sp)
+                Text("This app is currently", fontSize = 32.sp)
+                Text("$state", fontSize = 32.sp)
             }
 
             LaunchedEffect(lifecycle) {
