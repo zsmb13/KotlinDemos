@@ -36,11 +36,11 @@ fun App() {
                 Spacer(Modifier.height(48.dp))
 
                 Res.drawable.screen
-                
+
                 Text(stringResource(Res.string.greeting), style = MaterialTheme.typography.h5)
-                
+
                 Spacer(Modifier.weight(1f))
-                
+
                 Image(painterResource(Res.drawable.logo), null, modifier = Modifier.size(400.dp))
             }
 

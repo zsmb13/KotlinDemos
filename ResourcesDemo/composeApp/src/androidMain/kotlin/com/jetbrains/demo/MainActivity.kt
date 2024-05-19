@@ -6,10 +6,6 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import resourcesdemo.composeapp.generated.resources.Res
-import resourcesdemo.composeapp.generated.resources.`Screenshot 2024_05_06 at 225007`
-import resourcesdemo.composeapp.generated.resources.android
-import resourcesdemo.composeapp.generated.resources.android3
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,9 +13,6 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             App()
-            Res.string.android
-            Res.drawable.`Screenshot 2024_05_06 at 225007`
-            Res.string.android3
         }
     }
 }
