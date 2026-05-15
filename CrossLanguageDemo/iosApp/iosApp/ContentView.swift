@@ -17,7 +17,7 @@ struct ContentView: View {
             Button("Calculate!") {
                 let calculator = Calculator()
                 let radius = Double(input) ?? 0.0
-                let area = calculator.circleArea(radius: radius)
+                let area = calculator.calculateArea(radius: radius)
                 result = String(area)
             }
 
