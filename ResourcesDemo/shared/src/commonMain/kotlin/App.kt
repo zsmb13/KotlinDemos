@@ -6,13 +6,13 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.Font
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
-import org.jetbrains.compose.ui.tooling.preview.Preview
-import resourcesdemo.composeapp.generated.resources.*
+import resourcesdemo.shared.generated.resources.*
 
 @OptIn(ExperimentalResourceApi::class)
 @Composable
@@ -23,7 +23,9 @@ fun App() {
             var bytes by remember { mutableStateOf(byteArrayOf()) }
 
             Column(
-                modifier = Modifier.fillMaxWidth().padding(24.dp),
+                modifier = Modifier.fillMaxWidth()
+                    .windowInsetsPadding(WindowInsets.safeDrawing)
+                    .padding(24.dp),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 val jetbrainsMono = FontFamily(Font(Res.font.JetBrainsMono_Regular))

@@ -28,7 +28,7 @@ fun App() {
             CircleLogo(Modifier.padding(32.dp))
             TextField(input, onValueChange = { input = it }, label = { Text("Enter circle radius") })
             OutlinedButton(onClick = {
-                val area = Calculator().circleArea(input.toDoubleOrNull() ?: 0.0)
+                val area = Calculator().calculateArea(input.toDoubleOrNull() ?: 0.0)
                 result = area.toString()
             }) {
                 Text("Calculate!")
